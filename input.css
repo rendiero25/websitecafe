@@ -1,1 +1,17 @@
 @import "tailwindcss";
+
+@theme {
+    --font-primary: "Source Serif 4", serif;
+    --font-secondary: "Bebas Neue", serif;
+
+    --color-primary: #F5F4F2;
+    --color-secondary: #EE8542;
+    --color-tertiary: #5F3220;
+    --color-quaternary: #393330;
+
+    
+}
+
+.gridbox {
+    @apply flex-col justify-center items-center gap-4;
+}
