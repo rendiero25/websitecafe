@@ -7,11 +7,6 @@
     --color-primary: #F5F4F2;
     --color-secondary: #EE8542;
     --color-tertiary: #5F3220;
-    --color-quaternary: #393330;
-
-    
-}
-
-.gridbox {
-    @apply flex-col justify-center items-center gap-4;
+    --color-quaternary: #393330;  
+    --color-black: #1e1e1e;  
 }

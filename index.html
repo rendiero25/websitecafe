@@ -7,11 +7,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./output.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" /> -->
     <title>Cafe</title>
 </head>
 <body class="m-0 p-0 box-border bg-primary">
-    <header class="container">
+    <header class="container flex flex-row justify-center items-center gap-16">
         <section class="hidden 2xl:flex py-2 px-16">
             <div class="flex justify-between items-center"> 
                 <h3 class="font-primary">Tired? Let's have a cup of coffee.</h3>
@@ -20,10 +20,10 @@
             </div>
         </section>
 
-        <hr class="hidden w-full 2xl:flex">
+        <hr class="hidden 2xl:flex w-full bg-tertiary border-2">
 
-        <section class="flex justify-between items-center py-4 px-16">
-            <img src="./images/" alt="logo-kofee">
+        <section class="flex flex-row justify-between items-center py-8 px-8 w-full border-b-2 border-tertiary">
+            <img src="./images/logo.png" alt="logo-kofee" class="w-26">
 
             <!-- NAV FOR DESKTOP -->
             <div class="hidden 2xl:flex">
@@ -36,20 +36,15 @@
                 </nav>
             </div>
             
-            <div>
-                <button>
-                    <img src="./images/" alt="icon-search">
-                </button>
-            </div>
-
+            <button class="">
+                <img src="./images/search.svg" alt="icon-search" class="w-10">
+            </button>
+        
             <!-- HAMBURGER MENU FOR MOBILE -->
-            <div class="flex 2xl:hidden">
-                <button>
-                    <img src="./images/" alt="icon-hamburger">
-                </button>
-            </div>
             
-            <button></button>
+            <button>
+                <img src="./images/menu.svg" alt="icon-hamburger" class="w-10"> 
+            </button>
         </section>
 
         <!-- NAV FOR MOBILE -->
@@ -69,182 +64,231 @@
         </section>
     </header>
 
-    <main class="flex gap-16">
+    <main class="flex flex-col">
         <!-- HERO -->
-        <section class="relative min-h-screen flex justify-center items-center">
-            <div class="relative">
-                <img src="./images/" alt="image-hero">
-            </div>
+        <section class="relative min-h-screen flex flex-col justify-center items-center bg-yellow-500 px-6">
+            <img src="./images/image-hero.png" alt="image-hero" class="absolute object-cover h-full w-full">
+
+            <!-- <div class="w-full">
+                <img src="./images/image-hero.png" alt="image-hero" class="object-cover h-full w-full">
+            </div> -->
             
-            <div class="absolute flex flex-row justify-between items-center rounded-xl bg-tertiary p-8">
-                <div class="flex-col justify-start items-center">
-                    <h1 class="font-primary">HAVE A CUP OF COFFEE</h1>
-                    <p>Morbi justo vel diam non leo elementum massa. Molestie ipsum condimentum 
-                        egestas vitae ut cras aenean aoreet odionis.</p>
-                    <button class="bg-secondary text-white font-primary py-2 px-6 rounded-full">
-                        BOOK A TABLE
-                    </button>
+            <div class="relative flex flex-col 2xl:flex-row justify-center items-center rounded-xl bg-tertiary p-8 gap-12">
+                <div class="flex flex-col justify-center items-start gap-4">
+                    <h1 class="font-secondary uppercase text-white text-3xl">HAVE A CUP OF COFFEE</h1>
+                    <p class="text-white font-primary font-normal text-md">Morbi justo vel diam non leo elementum massa. Molestie ipsum condimentum 
+                        egestas vitae ut cras aenean aoreet odionis.
+                    </p>
+                    <button class="bg-secondary hover:bg-white text-white hover:text-secondary font-primary font-bold py-4 px-8 rounded-full items-start">BOOK A TABLE</button>
                 </div>
-            </div>
-
-            <div>
-                <div>
-                    <h1>IT'S A KOFEE TIME</h1>
-                    <p>Mon - Fri...........................6.00 am - 7.00 pm</p>
-                    <p>Sat - Sun...........................7.00 am - 3.00 pm</p>
+                <hr class="border-[0.1rem] border-primary opacity-50 w-full">
+                <div class="flex flex-col justify-center items-start gap-4"> 
+                    <h1 class="font-secondary uppercase text-white text-3xl items-start">IT'S A KOFEE TIME</h1>
+                    <p class="text-white font-primary font-normal text-md">Mon - Fri.....................6.00 am - 7.00 pm</p>
+                    <p class="text-white font-primary font-normal text-md">Sat - Sun......................7.00 am - 3.00 pm</p>
                 </div>
             </div>
         </section>
 
-        <section>
+        <section class="container py-16 px-6">
             <div class="flex flex-wrap justify-center items-center gap-8">
-                <div class="flex-col justify-center items-center gap-4">
-                    <img src="./images/" alt="icon-cup">
-                    <div>
-                        <h2>Cozy Ambiance</h2>
-                        <p>Purus pulvinar feugiat orci dictumst ellentesque ut sem partu rient.</p>
+                <div class="flex flex-col justify-center items-center gap-4">
+                    <img src="./images/cup.svg" alt="icon-cup">
+                    <div class="flex flex-col justify-center items-center gap-2">
+                        <h2 class="font-primary font-bold text-black text-2xl">Cozy Ambiance</h2>
+                        <p class="font-primary font-normal text-black text-lg text-center">Purus pulvinar feugiat orci dictumst ellentesque ut sem partu rient.</p>
                     </div>
                 </div>
-                <div class="flex-col justify-center items-center gap-4">
-                    <img src="./images/" alt="icon-teapot">
-                    <div>
-                        <h2>Artisanal Coffee</h2>
-                        <p>Purus pulvinar feugiat orci dictumst ellentesque ut sem partu rient.</p>
+                <div class="flex flex-col justify-center items-center gap-4">
+                    <img src="./images/teapot.svg" alt="icon-teapot">
+                    <div class="flex flex-col justify-center items-center gap-2">
+                        <h2 class="font-primary font-bold text-black text-2xl">Artisanal Coffee</h2>
+                        <p class="font-primary font-normal text-black text-lg text-center">Purus pulvinar feugiat orci dictumst ellentesque ut sem partu rient.</p>
                     </div>
                 </div>
-                <div class="flex-col justify-center items-center gap-4">
-                    <img src="./images/" alt="icon-teapot">
-                    <div>
-                        <h2>Fresh Delights</h2>
-                        <p>Eugiat orci dictumst ellentesque ut sem purus pulvinar partu rient.</p>
+                <div class="flex flex-col justify-center items-center gap-4">
+                    <img src="./images/coffee.svg" alt="icon-coffee">
+                    <div class="flex flex-col justify-center items-center gap-2">
+                        <h2 class="font-primary font-bold text-black text-2xl">Fresh Delights</h2>
+                        <p class="font-primary font-normal text-black text-lg text-center">Eugiat orci dictumst ellentesque ut sem purus pulvinar partu rient.</p>
                     </div>
                 </div>
-                <div class="flex-col justify-center items-center gap-4">
-                    <img src="./images/" alt="icon-teapot">
-                    <div>
-                        <h2>Friendly Service</h2>
-                        <p>Dictumst ellentesque ut sem purus pulvinar feugiat orci partu rient.</p>
+                <div class="flex flex-col justify-center items-center gap-4">
+                    <img src="./images/beans.svg" alt="icon-beans">
+                    <div class="flex flex-col justify-center items-center gap-2">
+                        <h2 class="font-primary font-bold text-black text-2xl">Friendly Service</h2>
+                        <p class="font-primary font-normal text-black text-lg text-center">Dictumst ellentesque ut sem purus pulvinar feugiat orci partu rient.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section>
-            <div class="flex flex-col 2xl:flex-row justify-center items-center">
-                <div>
-                    <img src="./images/" alt="image-pastries">
-                    <h3>PASTRIES</h3>
+        <section class="container pb-16">
+            <div class="flex flex-col 2xl:flex-row justify-center items-center gap-12">
+                <div class="w-full flex flex-col items-center gap-4">
+                    <img src="./images/pastries.png" alt="image-pastries">
+                    <h3 class="font-secondary font-bold text-4xl text-black">PASTRIES</h3>
                 </div>
-                <div>
-                    <img src="./images/" alt="image-tea">
-                    <h3>TEA SELECTION</h3>
+                <div class="w-full flex flex-col items-center gap-4">
+                    <img src="./images/tea-selection.png" alt="image-tea">
+                    <h3 class="font-secondary font-bold text-4xl text-black">TEA SELECTION</h3>
                 </div>
-                <div>
-                    <img src="./images/" alt="image-coffee">
-                    <h3>COFFEE SELECTION</h3>
+                <div class="w-full flex flex-col items-center gap-4">
+                    <img src="./images/coffee-selection.png" alt="image-coffee">
+                    <h3 class="font-secondary font-bold text-4xl text-black">COFFEE SELECTION</h3>
                 </div>
             </div>
         </section>
 
         <!-- OUR MENU -->
-        <section class="container py-12 px-8">
+        <section class="container pb-12 px-6">
             <div class="flex flex-col justify-center items-center gap-8">
                 <div class="flex-col justify-start items-center gap-4">
-                    <h1>OUR MENU</h1>
-                    <p>Blandit enim pretium purus morbi non tincidunt auctor eu molestie. Vitae eu nullam tincidunt accumsan.</p>
+                    <h1 class="font-secondary font-bold text-black text-6xl">OUR MENU</h1>
+                    <p class="font-primary text-black text-lg font-normal">Blandit enim pretium purus morbi non tincidunt auctor eu molestie. Vitae eu nullam tincidunt accumsan.</p>
                 </div>
                 <div class="flex-col 2xl:flex-row">
                     <div class="flex-col justify-start items-center gap-8">
-                        <div class="flex flex-col justify-start items-center gap-4">
-                            <h3>COFFEE SELECTION</h3>
-                            <div class="flex-col justify-start items-center">
+                        <div class="flex flex-col justify-center items-start gap-4">
+                            <h3 class="font-secondary text-black font-black text-3xl">COFFEE SELECTION</h3>
+
+                            <div class="flex flex-row justify-between items-center gap-4">
                                 <div class="flex-col justify-start items-center gap-4">
-                                    <h4>Espresso............................</h4>
-                                    <p>A strong and concentrated shot of coffee.</p>
+                                    <div class="flex flex-row">
+                                        <h4 class="font-primary text-xl font-bold text-black">Espresso</h4>
+                                        <hr class="border-2 border-black w-full border-dotted ml-2 mt-[1rem]">
+                                    </div>
+                                    <p class="font-primary font-normal text-slate-900">A strong and concentrated shot of coffee.</p>
                                 </div>
-                                <p class="self-start">$2.99</p>
+                                <p class="self-start font-primary text-lg font-bold text-black">$2.99</p>
                             </div>
-                            <div class="flex-col justify-start items-center">
+
+                            <div class="flex flex-row justify-between items-center gap-4">
                                 <div class="flex-col justify-start items-center gap-4">
-                                    <h4>Americano............................</h4>
-                                    <p>A shot of espresso diluted with hot water.</p>
+                                    <div class="flex flex-row">
+                                        <h4 class="font-primary text-xl font-bold text-black">Americano</h4>
+                                        <hr class="border-2 border-black w-full border-dotted ml-2 mt-[1rem]">
+                                    </div>
+                                    <p class="font-primary font-normal text-slate-900">A shot of espresso diluted with hot water..</p>
                                 </div>
-                                <p class="self-start">$3.49</p>
+                                <p class="self-start font-primary text-lg font-bold text-black">$3.49</p>
+                            </div>
+                            
+                            <div class="flex flex-row justify-between items-center gap-4">
+                                <div class="flex-col justify-start items-center gap-4">
+                                    <div class="flex flex-row">
+                                        <h4 class="font-primary text-xl font-bold text-black">Cappuccino</h4>
+                                        <hr class="border-2 border-black w-full border-dotted ml-2 mt-[1rem]">
+                                    </div>
+                                    <p class="font-primary font-normal text-slate-900">Equal parts of espresso, steamed milk, and foam, topped with cocoa.</p>
+                                </div>
+                                <p class="self-start font-primary text-lg font-bold text-black">$3.99</p>
+                            </div>
+
+                            <div class="flex flex-row justify-between items-center gap-4">
+                                <div class="flex-col justify-start items-center gap-4">
+                                    <div class="flex flex-row">
+                                        <h4 class="font-primary text-xl font-bold text-black">Latte</h4>
+                                        <hr class="border-2 border-black w-full border-dotted ml-2 mt-[1rem]">
+                                    </div>
+                                    <p class="font-primary font-normal text-slate-900">Creamy espresso with steamed milk and a thin layer of foam.</p>
+                                </div>
+                                <p class="self-start font-primary text-lg font-bold text-black">$4.49</p>
+                            </div>
+
+                            <div class="flex flex-row justify-between items-center gap-4">
+                                <div class="flex-col justify-start items-center gap-4">
+                                    <div class="flex flex-row">
+                                        <h4 class="font-primary text-xl font-bold text-black">Mocha</h4>
+                                        <hr class="border-2 border-black w-full border-dotted ml-2 mt-[1rem]">
+                                    </div>
+                                    <p class="font-primary font-normal text-slate-900">A delightful blend of espresso, chocolate, steamed milk, and great amazing whipped cream.</p>
+                                </div>
+                                <p class="self-start font-primary text-lg font-bold text-black">$4.99</p>
+                            </div>
+
+                            <div class="flex flex-row justify-between items-center gap-4">
+                                <div class="flex-col justify-start items-center gap-4">
+                                    <div class="flex flex-row">
+                                        <h4 class="font-primary text-xl font-bold text-black">Macadamia Nut Latte</h4>
+                                        <hr class="border-2 border-black w-full border-dotted ml-2 mt-[2.8rem]">
+                                    </div>
+                                    <p class="font-primary font-normal text-slate-900">A nutty and indulgent latte with a hint of macadamia flavor.</p>
+                                </div>
+                                <p class="self-start font-primary text-lg font-bold text-black mt-[1.7rem]">$3.99</p>
                             </div>
                         </div>
 
-                        <div class="flex flex-col justify-start items-center gap-4">
-                            <h3>SPECIALITY DRINKS</h3>
-                            <div class="flex-col justify-start items-center">
-                                <div class="flex-col justify-start items-center gap-4">
-                                    <h4>Espresso............................</h4>
-                                    <p>A strong and concentrated shot of coffee.</p>
-                                </div>
-                                <p class="self-start">$2.99</p>
-                            </div>
-                            <div class="flex-col justify-start items-center">
-                                <div class="flex-col justify-start items-center gap-4">
-                                    <h4>Americano............................</h4>
-                                    <p>A shot of espresso diluted with hot water.</p>
-                                </div>
-                                <p class="self-start">$3.49</p>
-                            </div>
-                        </div>
-                    </div>
+                        <div class="flex flex-col justify-center items-start gap-4">
+                            <h3 class="font-secondary text-black font-black text-3xl">SPECIALITY DRINKS</h3>
 
-                    <div class="flex-col justify-start items-center gap-8">
-                        <div class="flex flex-col justify-start items-center gap-4">
-                            <h3>PASTRIES</h3>
-                            <div class="flex-col justify-start items-center">
+                            <div class="flex flex-row justify-between items-center gap-4">
                                 <div class="flex-col justify-start items-center gap-4">
-                                    <h4>Espresso............................</h4>
-                                    <p>A strong and concentrated shot of coffee.</p>
+                                    <div class="flex flex-row">
+                                        <h4 class="font-primary text-xl font-bold text-black">Vanilla Latte</h4>
+                                        <hr class="border-2 border-black w-full border-dotted ml-2 mt-[1rem]">
+                                    </div>
+                                    <p class="font-primary font-normal text-slate-900">A rich latte with a touch of sweet vanilla flavor.</p>
                                 </div>
-                                <p class="self-start">$2.99</p>
+                                <p class="self-start font-primary text-lg font-bold text-black">$3.49</p>
                             </div>
-                            <div class="flex-col justify-start items-center">
+
+                            <div class="flex flex-row justify-between items-center gap-4">
                                 <div class="flex-col justify-start items-center gap-4">
-                                    <h4>Americano............................</h4>
-                                    <p>A shot of espresso diluted with hot water.</p>
+                                    <div class="flex flex-row">
+                                        <h4 class="font-primary text-xl font-bold text-black">Cold Brew</h4>
+                                        <hr class="border-2 border-black w-full border-dotted ml-2 mt-[1rem]">
+                                    </div>
+                                    <p class="font-primary font-normal text-slate-900">Smooth and strong coffee brewed slowly in cold water for a bold taste.</p>
                                 </div>
-                                <p class="self-start">$3.49</p>
+                                <p class="self-start font-primary text-lg font-bold text-black">$3.49</p>
+                            </div>
+                            
+                            <div class="flex flex-row justify-between items-center gap-4">
+                                <div class="flex-col justify-start items-center gap-4">
+                                    <div class="flex flex-row">
+                                        <h4 class="font-primary text-xl font-bold text-black">Caramel Macchiato</h4>
+                                        <hr class="border-2 border-black w-full border-dotted ml-2 mt-[1rem]">
+                                    </div>
+                                    <p class="font-primary font-normal text-slate-900">Espresso with caramel, steamed milk, and foam.</p>
+                                </div>
+                                <p class="self-start font-primary text-lg font-bold text-black">$3.99</p>
+                            </div>
+
+                            <div class="flex flex-row justify-between items-center gap-4">
+                                <div class="flex-col justify-start items-center gap-4">
+                                    <div class="flex flex-row">
+                                        <h4 class="font-primary text-xl font-bold text-black">Hazelnut Frappuccino</h4>
+                                        <hr class="border-2 border-black w-full border-dotted ml-2 mt-[1rem]">
+                                    </div>
+                                    <p class="font-primary font-normal text-slate-900">Creamy espresso with steamed milk and a thin layer of foam.</p>
+                                </div>
+                                <p class="self-start font-primary text-lg font-bold text-black">$5.99</p>
+                            </div>
+
+                            <div class="flex flex-row justify-between items-center gap-4">
+                                <div class="flex-col justify-start items-center gap-4">
+                                    <div class="flex flex-row">
+                                        <h4 class="font-primary text-xl font-bold text-black">Matcha Green Tea Latte</h4>
+                                        <hr class="border-2 border-black w-full border-dotted ml-2 mt-[1rem]">
+                                    </div>
+                                    <p class="font-primary font-normal text-slate-900">A creamy and earthy latte made with matcha green tea.</p>
+                                </div>
+                                <p class="self-start font-primary text-lg font-bold text-black">$4.99</p>
+                            </div>
+
+                            <div class="flex flex-row justify-between items-center gap-4">
+                                <div class="flex-col justify-start items-center gap-4">
+                                    <div class="flex flex-row">
+                                        <h4 class="font-primary text-xl font-bold text-black">Macadamia Nut Latte</h4>
+                                        <hr class="border-2 border-black w-full border-dotted ml-2 mt-[2.8rem]">
+                                    </div>
+                                    <p class="font-primary font-normal text-slate-900">A nutty and indulgent latte with a hint of macadamia flavor.</p>
+                                </div>
+                                <p class="self-start font-primary text-lg font-bold text-black mt-[1.7rem]">$3.99</p>
                             </div>
                         </div>
 
-                        <div class="flex flex-col justify-start items-center gap-4">
-                            <h3>SNACKS</h3>
-                            <div class="flex-col justify-start items-center">
-                                <div class="flex-col justify-start items-center gap-4">
-                                    <h4>Espresso............................</h4>
-                                    <p>A strong and concentrated shot of coffee.</p>
-                                </div>
-                                <p class="self-start">$2.99</p>
-                            </div>
-                            <div class="flex-col justify-start items-center">
-                                <div class="flex-col justify-start items-center gap-4">
-                                    <h4>Americano............................</h4>
-                                    <p>A shot of espresso diluted with hot water.</p>
-                                </div>
-                                <p class="self-start">$3.49</p>
-                            </div>
-                        </div>
-                        <div class="flex flex-col justify-start items-center gap-4">
-                            <h3>EXTRAS</h3>
-                            <div class="flex-col justify-start items-center">
-                                <div class="flex-col justify-start items-center gap-4">
-                                    <h4>Espresso............................</h4>
-                                    <p>A strong and concentrated shot of coffee.</p>
-                                </div>
-                                <p class="self-start">$2.99</p>
-                            </div>
-                            <div class="flex-col justify-start items-center">
-                                <div class="flex-col justify-start items-center gap-4">
-                                    <h4>Americano............................</h4>
-                                    <p>A shot of espresso diluted with hot water.</p>
-                                </div>
-                                <p class="self-start">$3.49</p>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -252,7 +296,7 @@
 
         <!-- TESTIMONIAL -->
         <section class="swiper-container">
-            <div class="swiper-wrapper">
+            <!-- <div class="swiper-wrapper">
                 <div class="swiper-slide">
                     <div class="flex-col justify-start items-center gap-4">
                         <p>"I absolutely love the cozy ambiance of this cafe! The warm lighting, 
@@ -278,12 +322,12 @@
                         <h4>Jane Smith</h4>
                     </div>
                 </div>
-            </div>
+            </div> -->
             <!-- Add Pagination -->
-            <div class="swiper-pagination"></div>
+            <!-- <div class="swiper-pagination"></div> -->
             <!-- Add Navigation -->
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
+            <!-- <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div> -->
         </section>
 
         <!-- NEWS -->
