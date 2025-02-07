@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./output.css">
-    <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" /> -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <title>Cafe</title>
 </head>
 <body class="m-0 p-0 box-border bg-primary">
@@ -144,7 +144,7 @@
         <section class="container pb-12 px-6">
             <div class="flex flex-col justify-center items-center gap-8">
                 <div class="flex-col justify-start items-center gap-4">
-                    <h1 class="font-secondary font-bold text-black text-6xl">OUR MENU</h1>
+                    <h1 class="font-secondary font-bold text-secondary text-6xl">OUR MENU</h1>
                     <p class="font-primary text-black text-lg font-normal">Blandit enim pretium purus morbi non tincidunt auctor eu molestie. Vitae eu nullam tincidunt accumsan.</p>
                 </div>
                 <div class="flex flex-col 2xl:flex-row gap-8">
@@ -423,108 +423,118 @@
                                 <p class="self-start font-primary text-lg font-bold text-black">$0.49</p>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- TESTIMONIAL -->
-        <section class="swiper-container">
-            <!-- <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <div class="flex-col justify-start items-center gap-4">
-                        <p>"I absolutely love the cozy ambiance of this cafe! The warm lighting, 
-                            comfortable seating, and charming decor make it the perfect place to 
-                            unwind. And the coffee? Simply divine! Every sip of their artisanal 
-                            brews is a treat for the taste buds. Highly recommended!"</p>
-                        <h4>Sarah Anderson</h4>
+        <section class="pb-12 px-6 overflow-hidden">
+            <section class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="flex flex-row justify-start items-center gap-2">
+                            <p class="font-secondary font-bold text-9xl self-start -mt-4 text-secondary">"</p>
+                            <div class="flex flex-col justify-center items-start gap-2">
+                                <p class="font-primary text-black font-normal text-xl">"I absolutely love the cozy ambiance of this cafe! The warm lighting, 
+                                    comfortable seating, and charming decor make it the perfect place to 
+                                    unwind. And the coffee? Simply divine! Every sip of their artisanal 
+                                    brews is a treat for the taste buds. Highly recommended!"</p>
+                                <h4 class="font-secondary font-normal text-black text-lg">Sarah Anderson</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="flex flex-row justify-start items-center gap-2">
+                            <p class="font-secondary font-bold text-9xl self-start -mt-4 text-secondary">"</p>
+                            <div class="flex flex-col justify-center items-start gap-2">
+                                <p class="font-primary text-black font-normal text-xl">"The pastries here are to die for! Fresh, delicious, and beautifully presented. 
+                                    The staff is always friendly and attentive. This cafe has become my go-to spot 
+                                    for a quick snack and a cup of coffee."</p>
+                                <h4 class="font-secondary font-normal text-black text-lg">John Doe</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="flex flex-row justify-start items-center gap-2">
+                            <p class="font-secondary font-bold text-9xl self-start -mt-4 text-secondary">"</p>
+                            <div class="flex flex-col justify-center items-start gap-2">
+                                <p class="font-primary text-black font-normal text-xl">"A hidden gem in the city! The tea selection is impressive, and the atmosphere 
+                                    is perfect for both working and relaxing. I can't get enough of their specialty 
+                                    drinks. Highly recommend giving this place a visit!"</p>
+                                <h4 class="font-secondary font-normal text-black text-lg">Jane Smith</h4>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="swiper-slide">
-                    <div class="flex-col justify-start items-center gap-4">
-                        <p>"The pastries here are to die for! Fresh, delicious, and beautifully presented. 
-                            The staff is always friendly and attentive. This cafe has become my go-to spot 
-                            for a quick snack and a cup of coffee."</p>
-                        <h4>John Doe</h4>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="flex-col justify-start items-center gap-4">
-                        <p>"A hidden gem in the city! The tea selection is impressive, and the atmosphere 
-                            is perfect for both working and relaxing. I can't get enough of their specialty 
-                            drinks. Highly recommend giving this place a visit!"</p>
-                        <h4>Jane Smith</h4>
-                    </div>
-                </div>
-            </div> -->
-            <!-- Add Pagination -->
-            <!-- <div class="swiper-pagination"></div> -->
-            <!-- Add Navigation -->
-            <!-- <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div> -->
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- Add Navigation -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </section>
         </section>
 
         <!-- NEWS -->
-        <section class="py-12 px-8">
-            <div class="flex flex-col justify-center items-center">
-                <div>
-                    <h1>NEWS ARTICLE</h1>
-                    <p>Blandit enim pretium purus morbi non tincidunt auctor eu molestie. 
-                        Vitae eu nullam tincidunt accumsan.</p>
-                    <div>
-                        <div>
-                            <img src="" alt="">
-                            <div>
-                                <h3>Cafe</h3>
-                                <p>Exploring the Growing Trend and Art of Craft</p>
-                            </div>
-                        </div>
-
-                        <hr>
-
-                        <div>
-                            <img src="" alt="">
-                            <div>
-                                <h3>Topics</h3>
-                                <p>The Science Behind Your Daily Cup of Joy</p>
-                            </div>
-                        </div>
-
-                        <hr>
-
-                        <div>
-                            <img src="" alt="">
-                            <div>
-                                <h3>Category</h3>
-                                <p>A Journey Through Different Brewing Methods</p>
-                            </div>
+        <section class="pb-12 px-6 2xl:px-0">
+            <div class="relative hidden 2xl:flex">
+                <div class="absolute flex flex-row justify-between">
+                    <img src="./images/imagebeans-left.png" alt="imagebean-left">
+                    <img src="./images/imagebeans-right.png" alt="imaggebean-right">
+                </div>
+            </div>
+            <div class="relative flex flex-col justify-center items-center gap-8">
+                <div class="flex-col justify-start items-center gap-4">               
+                    <h1 class="font-secondary font-bold text-secondary text-6xl">NEWS ARTICLE</h1>
+                    <p class="font-primary text-black text-lg font-normal">Blandit enim pretium purus morbi non tincidunt auctor eu molestie. 
+                        Vitae eu nullam tincidunt accumsan.
+                    </p>
+                <div class="flex flex-col justify-center items-center mt-10">
+                    <div class="flex flex-row gap-4 border-t py-4">
+                        <img src="./images/news1.png" alt="image-news1" class="w-40">
+                        <div class="flex flex-col justify-center items-start gap-2">
+                            <h3 class="font-primary font-normal text-black text-md">Cafe</h3>
+                            <p class="font-primary font-bold text-black text-xl">Exploring the Growing Trend and Art of Craft</p>
                         </div>
                     </div>
-                    <button>
-                        NEWS ARTICLE
-                    </button>
+                    <div class="flex flex-row gap-4 border-t py-4">
+                        <img src="./images/news2.png" alt="image-news1" class="w-40">
+                        <div class="flex flex-col justify-center items-start gap-2">
+                            <h3 class="font-primary font-normal text-black text-md">Topics</h3>
+                            <p class="font-primary font-bold text-black text-xl">The Science Behind Your Daily Cup of Joy</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-row gap-4 border-t border-b py-4">
+                        <img src="./images/news3.png" alt="image-news1" class="w-40">
+                        <div class="flex flex-col justify-center items-start gap-2">
+                            <h3 class="font-primary font-normal text-black text-md">Category</h3>
+                            <p class="font-primary font-bold text-black text-xl">A Journey Through Different Brewing Methods</p>
+                        </div>
+                    </div>
                 </div>  
             </div>
+            <button class="bg-secondary hover:bg-white text-white hover:text-secondary font-primary font-bold py-4 px-8 rounded-full items-start">
+                NEWS ARTICLE
+            </button>
         </section>
 
-        <section>
-            <div>
-                <div>
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
+        <section class="pb-12 2xl:px-0">
+            <div class="flex flex-col gap-4">
+                <div class="flex flex-col 2xl:flex-row gap-4">
+                    <img src="./images/gallery1.png" alt="image-gallery1">
+                    <img src="./images/gallery2.png" alt="image-gallery2">
+                    <img src="./images/gallery3.png" alt="image-gallery3">
+                    <img src="./images/gallery4.png" alt="image-gallery4">
+                    <img src="./images/gallery5.png" alt="image-gallery5">
+                    <img src="./images/gallery6.png" alt="image-gallery6">
                 </div>
-                <div>
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
+                <div class="hidden 2xl:flex flex-row gap-4">
+                    <img src="./images/gallery7.png" alt="image-gallery7">
+                    <img src="./images/gallery8.png" alt="image-gallery8">
+                    <img src="./images/gallery9.png" alt="image-gallery9">
+                    <img src="./images/gallery1.png" alt="image-gallery1">
+                    <img src="./images/gallery2.png" alt="image-gallery2">
+                    <img src="./images/gallery3.png" alt="image-gallery3">
                 </div>
             </div>
         </section>

@@ -707,14 +707,23 @@
   .m-0 {
     margin: calc(var(--spacing) * 0);
   }
-  .mt-\[1\.7rem\] {
-    margin-top: 1.7rem;
+  .-mt-4 {
+    margin-top: calc(var(--spacing) * -4);
+  }
+  .-mt-8 {
+    margin-top: calc(var(--spacing) * -8);
+  }
+  .-mt-10 {
+    margin-top: calc(var(--spacing) * -10);
+  }
+  .-mt-14 {
+    margin-top: calc(var(--spacing) * -14);
+  }
+  .mt-10 {
+    margin-top: calc(var(--spacing) * 10);
   }
   .mt-\[1rem\] {
     margin-top: 1rem;
-  }
-  .mt-\[2\.8rem\] {
-    margin-top: 2.8rem;
   }
   .ml-2 {
     margin-left: calc(var(--spacing) * 2);
@@ -821,14 +830,29 @@
   .min-h-screen {
     min-height: 100vh;
   }
+  .w-1 {
+    width: calc(var(--spacing) * 1);
+  }
   .w-1\/2 {
     width: calc(1/2 * 100%);
+  }
+  .w-4 {
+    width: calc(var(--spacing) * 4);
+  }
+  .w-5 {
+    width: calc(var(--spacing) * 5);
   }
   .w-10 {
     width: calc(var(--spacing) * 10);
   }
   .w-26 {
     width: calc(var(--spacing) * 26);
+  }
+  .w-40 {
+    width: calc(var(--spacing) * 40);
+  }
+  .w-52 {
+    width: calc(var(--spacing) * 52);
   }
   .w-full {
     width: 100%;
@@ -1341,6 +1365,9 @@
     text-overflow: ellipsis;
     white-space: nowrap;
   }
+  .overflow-hidden {
+    overflow: hidden;
+  }
   .scroll-auto {
     scroll-behavior: auto;
   }
@@ -1717,6 +1744,9 @@
   .py-16 {
     padding-block: calc(var(--spacing) * 16);
   }
+  .pt-4 {
+    padding-top: calc(var(--spacing) * 4);
+  }
   .pb-12 {
     padding-bottom: calc(var(--spacing) * 12);
   }
@@ -1786,6 +1816,14 @@
   .text-6xl {
     font-size: var(--text-6xl);
     line-height: var(--tw-leading, var(--text-6xl--line-height));
+  }
+  .text-8xl {
+    font-size: var(--text-8xl);
+    line-height: var(--tw-leading, var(--text-8xl--line-height));
+  }
+  .text-9xl {
+    font-size: var(--text-9xl);
+    line-height: var(--tw-leading, var(--text-9xl--line-height));
   }
   .text-lg {
     font-size: var(--text-lg);
@@ -1887,8 +1925,14 @@
   .text-black {
     color: var(--color-black);
   }
+  .text-secondary {
+    color: var(--color-secondary);
+  }
   .text-slate-900 {
     color: var(--color-slate-900);
+  }
+  .text-tertiary {
+    color: var(--color-tertiary);
   }
   .text-white {
     color: var(--color-white);
@@ -2367,6 +2411,11 @@
   .\32 xl\:flex-row {
     @media (width >= 96rem) {
       flex-direction: row;
+    }
+  }
+  .\32 xl\:px-0 {
+    @media (width >= 96rem) {
+      padding-inline: calc(var(--spacing) * 0);
     }
   }
 }
