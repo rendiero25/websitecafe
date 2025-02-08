@@ -1,5 +1,6 @@
 "use strict";
 
+// TESTIMONIAL SLIDER
 const swiper = new Swiper('.swiper-container', {
     loop: true,
     pagination: {
@@ -10,4 +11,12 @@ const swiper = new Swiper('.swiper-container', {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
     },
+});
+
+//MOBILE MENU NAV
+let hamburgerButton = document.getElementById('menu-button');
+let mobileMenu = document.getElementById('mobile-menu');
+
+hamburgerButton.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
 });

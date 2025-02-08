@@ -10,3 +10,7 @@
     --color-quaternary: #393330;  
     --color-black: #1e1e1e;  
 }
+
+.subheading {
+    @apply class="font-secondary font-bold text-secondary text-6xl
+}

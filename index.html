@@ -11,7 +11,78 @@
     <title>Cafe</title>
 </head>
 <body class="m-0 p-0 box-border bg-primary">
-    <header class="container flex flex-row justify-center items-center gap-16">
+    <header class="bg-primary h-20 relative z-20 xl:mt-5 xl:px-20">
+        <div class="max-w-full mx-auto px-6">
+            <div class="flex justify-center h-16 xl:w-full">
+                <div class="w-full flex flex-row justify-between items-center mt-5 gap-24">
+
+                    <section class="hidden 2xl:flex py-2 px-16">
+                        <div class="flex justify-between items-center"> 
+                            <h3 class="font-primary">Tired? Let's have a cup of coffee.</h3>
+                            <h3 class="font-primary">Call us: 123 456 789 241</h3>
+                            <h3 class="font-primary">Out location: Bekasi, Indonesia</h3>
+                        </div>
+                    </section>
+
+                    <div class="w-full flex flex-row justify-between items-center xl:w-full xl:flex xl:flex-row xl:-ml-8 xl:justify-around xl:gap-[18rem] 2xl:gap-[30rem] 3xl:gap-[45rem] 4xl:gap-[85rem] 4xl:mt-6">
+                        <!-- logo -->
+                        <img src="./images/logo.png" alt="logoSeaSearch" class="w-26 xl:w-36 xl:object-contain">
+                        
+                        <!-- search -->
+                        <button class="">
+                            <img src="./images/search.svg" alt="icon-search" class="w-8">
+                        </button>
+
+                        <!-- Link website -->
+                        <section class="hidden xl:flex">
+                            <div class="flex flex-row items-center gap-10 3xl:-mr-20">
+                                <div class="xl:flex w-full gap-12">
+                                    <a href="./index.html" class="font-md text-md xl:text-xl ">Home</a>
+                                    <a href="./about.html" class="font-md text-md xl:text-xl">About Us</a>
+                                    <a href="./reservation.html" class="font-md text-md xl:text-xl">Reservation</a>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                    
+                     <!-- Mobile menu button -->
+                    <div class="flex items-center sm:mr-5 lg:mr-0 xl:hidden">
+                        <button id="menu-button" class="focus:outline-none">
+                            <img src="./images/menu.svg" alt="icon-hamburger" class="w-10"> 
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile menu-->
+        <section id="mobile-menu" class="hidden">
+            <div class="xl:hidden bg-primary shadow-md flex flex-col justify-start gap-10 py-10 px-6">
+                <div class="flex flex-col gap-4 justify-center items-start">
+                    <a href="./index.html" class="font-primary font-bold text-6xl xl:text-xl text-secondary">Home</a>
+                    <a href="./about.html" class="font-primary font-bold text-6xl xl:text-xl text-secondary">About Us</a>
+                    <a href="./reservation.html" class="font-primary font-bold text-6xl xl:text-xl text-secondary">Reservation</a>
+                </div>
+                <div class="xl:hidden py-2">
+                    <div class="flex flex-col justify-between items-start text-lg"> 
+                        <h3 class="font-primary">Tired? Let's have a cup of coffee.</h3>
+                        <h3 class="font-primary">Call us: 123 456 789 241</h3>
+                        <h3 class="font-primary">Out location: Bekasi, Indonesia</h3>
+                    </div>
+                </div>
+                <div class="flex flex-row justify-start  gap-8">
+                    <img src="./images/FB.svg" alt="icon-facebook" class="w-4">
+                    <img src="./images/IG.svg" alt="icon-instagram" class="w-6">
+                    <img src="./images/X.svg" alt="icon-x" class="w-6">
+                    <img src="./images/yt.svg" alt="icon-youtube" class="w-6">
+                    <img src="./images/link.svg" alt="icon-linkedin" class="w-6">
+                </div>    
+            </div>
+        </section>
+    </header>
+
+    <!-- ------ -->
+    <!-- <header class="container flex flex-row justify-center items-center gap-16">
         <section class="hidden 2xl:flex py-2 px-16">
             <div class="flex justify-between items-center"> 
                 <h3 class="font-primary">Tired? Let's have a cup of coffee.</h3>
@@ -25,7 +96,7 @@
         <section class="flex flex-row justify-between items-center py-8 px-8 w-full border-b-2 border-tertiary">
             <img src="./images/logo.png" alt="logo-kofee" class="w-26">
 
-            <!-- NAV FOR DESKTOP -->
+            
             <div class="hidden 2xl:flex">
                 <nav>
                     <ul class="flex justify-between items-center gap-6">
@@ -37,32 +108,35 @@
             </div>
             
             <button class="">
-                <img src="./images/search.svg" alt="icon-search" class="w-10">
+                <img src="./images/search.svg" alt="icon-search" class="w-8">
             </button>
         
-            <!-- HAMBURGER MENU FOR MOBILE -->
             
-            <button>
-                <img src="./images/menu.svg" alt="icon-hamburger" class="w-10"> 
+            
+            <button id="hamburger-button">
+                <img src="./images/menu.svg" alt="icon-hamburger" class="w-8"> 
             </button>
         </section>
 
-        <!-- NAV FOR MOBILE -->
-        <section class="hidden">
-            <nav>
-                <ul class="flex justify-between items-center gap-6">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Reservation</a></li>
-                </ul>
-            </nav>
-            <div class="flex justify-between items-center"> 
-                <h3 class="font-primary">Tired? Let's have a cup of coffee.</h3>
-                <h3 class="font-primary">Call us: 123 456 789 241</h3>
-                <h3 class="font-primary">Out location: Bekasi, Indonesia</h3>
+        
+        <section class="hidden" id="nav-mobile">
+            <div class="w-full bg-secondary">
+                <nav>
+                    <ul class="flex justify-between items-center gap-6">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Reservation</a></li>
+                    </ul>
+                </nav>
+                <div class="flex justify-between items-center"> 
+                    <h3 class="font-primary">Tired? Let's have a cup of coffee.</h3>
+                    <h3 class="font-primary">Call us: 123 456 789 241</h3>
+                    <h3 class="font-primary">Out location: Bekasi, Indonesia</h3>
+                </div>
             </div>
         </section>
-    </header>
+
+    </header> -->
 
     <main class="flex flex-col">
         <!-- HERO -->
@@ -429,9 +503,9 @@
         </section>
 
         <!-- TESTIMONIAL -->
-        <section class="pb-12 px-6 overflow-hidden">
-            <section class="swiper-container">
-                <div class="swiper-wrapper">
+        <section class="relative pb-12 px-6 overflow-hidden">
+            <div class="swiper-container">
+                <div class="swiper-wrapper gap-6">
                     <div class="swiper-slide">
                         <div class="flex flex-row justify-start items-center gap-2">
                             <p class="font-secondary font-bold text-9xl self-start -mt-4 text-secondary">"</p>
@@ -467,16 +541,21 @@
                         </div>
                     </div>
                 </div>
-                <!-- Add Pagination -->
-                <div class="swiper-pagination"></div>
-                <!-- Add Navigation -->
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
-            </section>
+                
+                <div class="">
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                    <!-- Add Navigation -->
+                    <div class="hidden 2xl:flex">
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <!-- NEWS -->
-        <section class="pb-12 px-6 2xl:px-0">
+        <section class="pb-12 px-6 2xl:px-0 mt-8 2xl:mt-0">
             <div class="relative hidden 2xl:flex">
                 <div class="absolute flex flex-row justify-between">
                     <img src="./images/imagebeans-left.png" alt="imagebean-left">
@@ -539,48 +618,42 @@
             </div>
         </section>
 
-        <section>
-            <div>
-                <div>
-                    <h3>PARTNETSHIP</h3>
-                    <p>A Journey Through Different Brewing Methods</p>
-                </div>>
-                <div>
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
+        <section class="pb-12 px-6">
+            <div class="flex flex-col gap-8">
+                <div class="flex-col justify-start items-center gap-4">
+                    <h3 class="font-secondary font-bold text-secondary text-6xl">PARTNERSHIP</h3>
+                    <p class="font-primary text-black text-lg font-normal">A Journey Through Different Brewing Methods</p>
+                </div>
+                <div class="flex flex-col 2xl:flex-row justify-center items-start gap-12">
+                    <img src="./images/partner1.png" alt="logo-partner1">
+                    <img src="./images/partner2.png" alt="logo-partner2">
+                    <img src="./images/partner3.png" alt="logo-partner3">
+                    <img src="./images/partner4.png" alt="logo-partner4">
+                    <img src="./images/partner5.png" alt="logo-partner5">
                 </div>
             </div>
         </section>
     </main>
 
-    <footer>
-        <div>
-            <div>
-                <img src="" alt="">
-                <p>Blandit enim pretium purus morbi non tincidunt auctor eu molestie.</p>
-                <div>
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
+    <footer class="py-12">
+        <div class="px-6 flex flex-col gap-4">
+            <div class="flex flex-col justify-center items-start gap-4">
+                <img src="./images/logo.png" alt="logo-kofee" class="w-52">
+                <p class="font-primary text-black text-lg font-normal">Blandit enim pretium purus morbi non tincidunt auctor eu molestie.</p>
+                <div class="flex flex-row justify-center items-center gap-8">
+                    <img src="./images/FB.svg" alt="icon-facebook" class="w-4">
+                    <img src="./images/IG.svg" alt="icon-instagram" class="w-6">
+                    <img src="./images/X.svg" alt="icon-x" class="w-6">
+                    <img src="./images/yt.svg" alt="icon-youtube" class="w-6">
+                    <img src="./images/link.svg" alt="icon-linkedin" class="w-6">
                 </div>
             </div>
             <div>
-                <ul>
+                <ul class="flex flex-row font-bold text-black gap-8 text-xl font-primary mt-6">
                     <li>Home</li>
                     <li>About Us</li>
                     <li>Reservation</li>
                 </ul>
-            </div>
-            <div>
-                <p></p>
-            </div>
-            <div>
-                <p></p>
             </div>
         </div>
     </footer>
