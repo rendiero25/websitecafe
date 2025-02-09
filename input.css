@@ -9,8 +9,10 @@
     --color-tertiary: #5F3220;
     --color-quaternary: #393330;  
     --color-black: #1e1e1e;  
+
+    --breakpoint-3xl: 1920px;
 }
 
 .subheading {
-    @apply class="font-secondary font-bold text-secondary text-6xl
+    @apply font-secondary font-bold text-secondary text-6xl
 }

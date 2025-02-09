@@ -1,1 +1,159 @@
-!
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./output.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <title>Cafe</title>
+</head>
+<body class="m-0 p-0 box-border bg-primary">
+    <header class="bg-primary h-20 relative z-20">
+        <div class="max-w-full mx-auto px-6 xl:px-0">
+            <div class="flex flex-col justify-center h-16 xl:h-auto xl:w-full">
+
+                <section class="hidden xl:flex w-full border-b-1 border-tertiary px-20 py-2">
+                    <div class="flex flex-row justify-between w-full h-full text-sm text-tertiary"> 
+                        <h3 class="font-primary">Tired? Let's have a cup of coffee.</h3>
+                        <h3 class="font-primary">Call us: 123 456 789 241</h3>
+                        <h3 class="font-primary">Out location: Bekasi, Indonesia</h3>
+                    </div>
+                </section>
+
+                <div class="w-full flex flex-row justify-between items-center mt-5 gap-24 xl:px-20">
+                    <div class="w-[50vw] flex flex-row justify-between items-center xl:w-full xl:flex xl:flex-row xl:justify-between 4xl:mt-6">
+                        <!-- logo -->
+                        <img src="./images/logo.png" alt="logo-kofee" class="w-26">
+                        
+                        <!-- search -->
+                        <button class="xl:hidden">
+                            <img src="./images/search.svg" alt="icon-search" class="w-8">
+                        </button>
+
+                        <!-- Link website -->
+                        <section class="hidden xl:flex">
+                            <div class="flex flex-row items-center gap-10 3xl:-mr-20">
+                                <button class="hidden xl:flex">
+                                    <img src="./images/search.svg" alt="icon-search" class="w-8">
+                                </button>
+                                <div class="xl:flex w-full gap-12 xl:gap-4 font-primary">
+                                    <a href="./index.html" class="font-md text-md xl:text-xl ">Home</a>
+                                    <a href="./about.html" class="font-md text-md xl:text-xl">About Us</a>
+                                    <a href="./reservation.html" class="font-md text-md xl:text-xl">Reservation</a>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                    
+                     <!-- Mobile menu button -->
+                    <div class="flex items-center sm:mr-5 lg:mr-0 xl:hidden">
+                        <button id="menu-button" class="focus:outline-none">
+                            <img src="./images/menu.svg" alt="icon-hamburger" class="w-10"> 
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile menu-->
+        <section id="mobile-menu" class="hidden">
+            <div class="xl:hidden bg-primary shadow-md flex flex-col justify-start gap-10 py-10 px-6">
+                <div class="flex flex-col gap-4 justify-center items-start">
+                    <a href="./index.html" class="font-primary font-bold text-6xl xl:text-xl text-secondary">Home</a>
+                    <a href="./about.html" class="font-primary font-bold text-6xl xl:text-xl text-secondary">About Us</a>
+                    <a href="./reservation.html" class="font-primary font-bold text-6xl xl:text-xl text-secondary">Reservation</a>
+                </div>
+                <div class="xl:hidden py-2">
+                    <div class="flex flex-col justify-between items-start text-lg"> 
+                        <h3 class="font-primary">Tired? Let's have a cup of coffee.</h3>
+                        <h3 class="font-primary">Call us: 123 456 789 241</h3>
+                        <h3 class="font-primary">Out location: Bekasi, Indonesia</h3>
+                    </div>
+                </div>
+                <div class="flex flex-row justify-start  gap-8">
+                    <img src="./images/FB.svg" alt="icon-facebook" class="w-4">
+                    <img src="./images/IG.svg" alt="icon-instagram" class="w-6">
+                    <img src="./images/X.svg" alt="icon-x" class="w-6">
+                    <img src="./images/yt.svg" alt="icon-youtube" class="w-6">
+                    <img src="./images/link.svg" alt="icon-linkedin" class="w-6">
+                </div>    
+            </div>
+        </section>
+    </header>
+
+    <main class="flex flex-col gap-12 xl:mt-10">
+        <section class="px-6 sm:px-10 xl:px-20 xl:flex xl:justify-center ">
+            <div class="mt-10 xl:max-w-2xl">
+                <p class="font-primary font-normal text-2xl">Welcome to Kofee Cafe, where we strive to provide a memorable coffee experience in a cozy and inviting atmosphere. 
+                    At Kofee Cafe, we are passionate about serving artisanal coffee that delights the senses. Our expert baristas 
+                    skillfully craft each cup, ensuring the perfect balance of flavors and aromas. Whether you're a coffee aficionado 
+                    or a casual coffee lover, our diverse coffee selection, including classics like cappuccinos and lattes.</p>
+            </div>
+        </section>
+
+        <section class="xl:px-20 bg-[#EDEBE8]">
+            <div class="flex flex-col xl:flex-row justify-between xl:justify-center items-center gap-4">
+                <div class="w-auto justify-center items-center xl:flex xl:flex-row xl:justify-center xl:items-center">
+                    <div class="w-full 2xl:py-8">
+                        <img src="./images/reservation-pic.png" alt="image-beans" class="object-cover w-full h-full">
+                    </div>
+                    <div class="p-10 xl:pr-0 xl:pl-8 flex flex-col xl:flex-row gap-4 xl:gap-8">
+                        <div class="flex flex-col justify-center items-start gap-4">
+                            <h2 class="font-secondary font-bold text-secondary text-6xl">Reservation</h2>
+                            <p class="font-primary text-black text-lg font-normal">
+                                Blandit enim pretium purus morbi non tincidunt auctor eu molestie. 
+                                Vitae eu nullam tincidunt accumsan.
+                            </p> 
+                        </div>
+                        <div>
+                            <form action="">
+                                <div class="flex flex-col gap-4">
+                                    <input type="text" placeholder="Name" class="w-full h-12 px-4 text-black font-primary text-lg border-2 border-tertiary">
+                                    <input type="email" placeholder="Email" class="w-full h-12 px-4 text-black font-primary text-lg border-2 border-tertiary">
+                                    <input type="text" placeholder="Phone" class="w-full h-12 px-4 text-black font-primary text-lg border-2 border-tertiary">
+                                    <input type="date" placeholder="Date" class="w-full h-12 px-4 text-black font-primary text-lg border-2 border-tertiary">
+                                    <input type="time" placeholder="Time" class="w-full h-12 px-4 text-black font-primary text-lg border-2 border-tertiary">
+                                    <button class="w-full h-12 bg-secondary text-white font-primary font-bold text-lg rounded-2xl">Reserve Now</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="py-12">
+        <div class="px-6 sm:px-10 xl:px-20 flex flex-col xl:flex-row xl:justify-between xl:items-start gap-4">
+            <div class="flex flex-col justify-center items-start gap-4 xl:gap-2">
+                <img src="./images/logo.png" alt="logo-kofee" class="w-52 xl:w-32">
+                <p class="font-primary text-black text-lg font-normal xl:max-w-md">Blandit enim pretium purus morbi non tincidunt auctor eu molestie.</p>
+                <div class="flex flex-row justify-center items-center gap-8">
+                    <img src="./images/FB.svg" alt="icon-facebook" class="w-4">
+                    <img src="./images/IG.svg" alt="icon-instagram" class="w-6">
+                    <img src="./images/X.svg" alt="icon-x" class="w-6">
+                    <img src="./images/yt.svg" alt="icon-youtube" class="w-6">
+                    <img src="./images/link.svg" alt="icon-linkedin" class="w-6">
+                </div>
+            </div>
+            <div>
+                <ul class="flex flex-col font-bold text-black gap-4 text-xl font-primary mt-6 xl:mt-0">
+                    <li>Home</li>
+                    <li>About Us</li>
+                    <li>Reservation</li>
+                </ul>
+            </div>
+            <div class="flex flex-col justify-center items-start gap-4">
+                <p class="font-primary font-normal text-secondary text-xl">kofee.contact@gmail.com</p>
+                <p class="font-primary font-normal text-secondary text-xl">+62 812 1234 5678</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./dev.js"></script>
+</body>
+</html>!

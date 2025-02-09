@@ -20,3 +20,4 @@ let mobileMenu = document.getElementById('mobile-menu');
 hamburgerButton.addEventListener('click', () => {
     mobileMenu.classList.toggle('hidden');
 });
+

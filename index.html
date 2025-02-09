@@ -11,32 +11,35 @@
     <title>Cafe</title>
 </head>
 <body class="m-0 p-0 box-border bg-primary">
-    <header class="bg-primary h-20 relative z-20 xl:mt-5 xl:px-20">
-        <div class="max-w-full mx-auto px-6">
-            <div class="flex justify-center h-16 xl:w-full">
-                <div class="w-full flex flex-row justify-between items-center mt-5 gap-24">
+    <header class="bg-primary h-20 relative z-20">
+        <div class="max-w-full mx-auto px-6 xl:px-0">
+            <div class="flex flex-col justify-center h-16 xl:h-auto xl:w-full">
 
-                    <section class="hidden 2xl:flex py-2 px-16">
-                        <div class="flex justify-between items-center"> 
-                            <h3 class="font-primary">Tired? Let's have a cup of coffee.</h3>
-                            <h3 class="font-primary">Call us: 123 456 789 241</h3>
-                            <h3 class="font-primary">Out location: Bekasi, Indonesia</h3>
-                        </div>
-                    </section>
+                <section class="hidden xl:flex w-full border-b-1 border-tertiary px-20 py-2">
+                    <div class="flex flex-row justify-between w-full h-full text-sm text-tertiary"> 
+                        <h3 class="font-primary">Tired? Let's have a cup of coffee.</h3>
+                        <h3 class="font-primary">Call us: 123 456 789 241</h3>
+                        <h3 class="font-primary">Out location: Bekasi, Indonesia</h3>
+                    </div>
+                </section>
 
-                    <div class="w-full flex flex-row justify-between items-center xl:w-full xl:flex xl:flex-row xl:-ml-8 xl:justify-around xl:gap-[18rem] 2xl:gap-[30rem] 3xl:gap-[45rem] 4xl:gap-[85rem] 4xl:mt-6">
+                <div class="w-full flex flex-row justify-between items-center mt-5 gap-24 xl:px-20">
+                    <div class="w-[50vw] flex flex-row justify-between items-center xl:w-full xl:flex xl:flex-row xl:justify-between 4xl:mt-6">
                         <!-- logo -->
-                        <img src="./images/logo.png" alt="logoSeaSearch" class="w-26 xl:w-36 xl:object-contain">
+                        <img src="./images/logo.png" alt="logo-kofee" class="w-26">
                         
                         <!-- search -->
-                        <button class="">
+                        <button class="xl:hidden">
                             <img src="./images/search.svg" alt="icon-search" class="w-8">
                         </button>
 
                         <!-- Link website -->
                         <section class="hidden xl:flex">
                             <div class="flex flex-row items-center gap-10 3xl:-mr-20">
-                                <div class="xl:flex w-full gap-12">
+                                <button class="hidden xl:flex">
+                                    <img src="./images/search.svg" alt="icon-search" class="w-8">
+                                </button>
+                                <div class="xl:flex w-full gap-12 xl:gap-4 font-primary">
                                     <a href="./index.html" class="font-md text-md xl:text-xl ">Home</a>
                                     <a href="./about.html" class="font-md text-md xl:text-xl">About Us</a>
                                     <a href="./reservation.html" class="font-md text-md xl:text-xl">Reservation</a>
@@ -81,81 +84,25 @@
         </section>
     </header>
 
-    <!-- ------ -->
-    <!-- <header class="container flex flex-row justify-center items-center gap-16">
-        <section class="hidden 2xl:flex py-2 px-16">
-            <div class="flex justify-between items-center"> 
-                <h3 class="font-primary">Tired? Let's have a cup of coffee.</h3>
-                <h3 class="font-primary">Call us: 123 456 789 241</h3>
-                <h3 class="font-primary">Out location: Bekasi, Indonesia</h3>
-            </div>
-        </section>
-
-        <hr class="hidden 2xl:flex w-full bg-tertiary border-2">
-
-        <section class="flex flex-row justify-between items-center py-8 px-8 w-full border-b-2 border-tertiary">
-            <img src="./images/logo.png" alt="logo-kofee" class="w-26">
-
-            
-            <div class="hidden 2xl:flex">
-                <nav>
-                    <ul class="flex justify-between items-center gap-6">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Reservation</a></li>
-                    </ul>
-                </nav>
-            </div>
-            
-            <button class="">
-                <img src="./images/search.svg" alt="icon-search" class="w-8">
-            </button>
-        
-            
-            
-            <button id="hamburger-button">
-                <img src="./images/menu.svg" alt="icon-hamburger" class="w-8"> 
-            </button>
-        </section>
-
-        
-        <section class="hidden" id="nav-mobile">
-            <div class="w-full bg-secondary">
-                <nav>
-                    <ul class="flex justify-between items-center gap-6">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Reservation</a></li>
-                    </ul>
-                </nav>
-                <div class="flex justify-between items-center"> 
-                    <h3 class="font-primary">Tired? Let's have a cup of coffee.</h3>
-                    <h3 class="font-primary">Call us: 123 456 789 241</h3>
-                    <h3 class="font-primary">Out location: Bekasi, Indonesia</h3>
-                </div>
-            </div>
-        </section>
-
-    </header> -->
-
-    <main class="flex flex-col">
+    <main class="flex flex-col gap-12 xl:mt-10">
         <!-- HERO -->
-        <section class="relative min-h-screen flex flex-col justify-center items-center bg-yellow-500 px-6">
-            <img src="./images/image-hero.png" alt="image-hero" class="absolute object-cover h-full w-full">
-
-            <!-- <div class="w-full">
+        <section class="min-h-screen flex flex-col justify-start items-center">
+            <div class="h-[16rem] sm:h-[18rem] xl:h-[30rem] 3xl:h-[40rem] w-full">
                 <img src="./images/image-hero.png" alt="image-hero" class="object-cover h-full w-full">
-            </div> -->
+            </div>
             
-            <div class="relative flex flex-col 2xl:flex-row justify-center items-center rounded-xl bg-tertiary p-8 gap-12">
-                <div class="flex flex-col justify-center items-start gap-4">
+            <div class="w-full xl:w-fit flex flex-col xl:flex-row justify-center items-start rounded-b-xl xl:rounded-xl bg-tertiary p-8 gap-12 xl:-mt-[7rem]">
+                <div class="flex flex-col justify-center items-start gap-4 xl:border-r-1 border-primary">
                     <h1 class="font-secondary uppercase text-white text-3xl">HAVE A CUP OF COFFEE</h1>
-                    <p class="text-white font-primary font-normal text-md">Morbi justo vel diam non leo elementum massa. Molestie ipsum condimentum 
+                    <p class="text-white font-primary font-normal text-md max-w-lg">Morbi justo vel diam non leo elementum massa. Molestie ipsum condimentum 
                         egestas vitae ut cras aenean aoreet odionis.
                     </p>
-                    <button class="bg-secondary hover:bg-white text-white hover:text-secondary font-primary font-bold py-4 px-8 rounded-full items-start">BOOK A TABLE</button>
+                    
+                    <button class="bg-secondary hover:bg-tertiary text-white hover:text-secondary font-primary font-bold py-4 px-8 rounded-full items-start">
+                        BOOK A TABLE
+                    </button>
                 </div>
-                <hr class="border-[0.1rem] border-primary opacity-50 w-full">
+                <hr class="xl:hidden border-[0.1rem] border-primary opacity-50 w-full">
                 <div class="flex flex-col justify-center items-start gap-4"> 
                     <h1 class="font-secondary uppercase text-white text-3xl items-start">IT'S A KOFEE TIME</h1>
                     <p class="text-white font-primary font-normal text-md">Mon - Fri.....................6.00 am - 7.00 pm</p>
@@ -164,70 +111,70 @@
             </div>
         </section>
 
-        <section class="container py-16 px-6">
-            <div class="flex flex-wrap justify-center items-center gap-8">
+        <section class="container xl:-mt-30 pb-12 px-6 xl:px-20 sm:px-10">
+            <div class="flex flex-col xl:flex-row justify-center items-center gap-8">
                 <div class="flex flex-col justify-center items-center gap-4">
                     <img src="./images/cup.svg" alt="icon-cup">
                     <div class="flex flex-col justify-center items-center gap-2">
                         <h2 class="font-primary font-bold text-black text-2xl">Cozy Ambiance</h2>
-                        <p class="font-primary font-normal text-black text-lg text-center">Purus pulvinar feugiat orci dictumst ellentesque ut sem partu rient.</p>
+                        <p class="font-primary font-normal text-black text-lg text-center xl:max-w-sm">Purus pulvinar feugiat orci dictumst ellentesque ut sem partu rient.</p>
                     </div>
                 </div>
                 <div class="flex flex-col justify-center items-center gap-4">
                     <img src="./images/teapot.svg" alt="icon-teapot">
                     <div class="flex flex-col justify-center items-center gap-2">
                         <h2 class="font-primary font-bold text-black text-2xl">Artisanal Coffee</h2>
-                        <p class="font-primary font-normal text-black text-lg text-center">Purus pulvinar feugiat orci dictumst ellentesque ut sem partu rient.</p>
+                        <p class="font-primary font-normal text-black text-lg text-center xl:max-w-sm">Purus pulvinar feugiat orci dictumst ellentesque ut sem partu rient.</p>
                     </div>
                 </div>
                 <div class="flex flex-col justify-center items-center gap-4">
                     <img src="./images/coffee.svg" alt="icon-coffee">
                     <div class="flex flex-col justify-center items-center gap-2">
                         <h2 class="font-primary font-bold text-black text-2xl">Fresh Delights</h2>
-                        <p class="font-primary font-normal text-black text-lg text-center">Eugiat orci dictumst ellentesque ut sem purus pulvinar partu rient.</p>
+                        <p class="font-primary font-normal text-black text-lg text-center xl:max-w-sm">Eugiat orci dictumst ellentesque ut sem purus pulvinar partu rient.</p>
                     </div>
                 </div>
                 <div class="flex flex-col justify-center items-center gap-4">
                     <img src="./images/beans.svg" alt="icon-beans">
                     <div class="flex flex-col justify-center items-center gap-2">
                         <h2 class="font-primary font-bold text-black text-2xl">Friendly Service</h2>
-                        <p class="font-primary font-normal text-black text-lg text-center">Dictumst ellentesque ut sem purus pulvinar feugiat orci partu rient.</p>
+                        <p class="font-primary font-normal text-black text-lg text-center xl:max-w-sm">Dictumst ellentesque ut sem purus pulvinar feugiat orci partu rient.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="container pb-16">
-            <div class="flex flex-col 2xl:flex-row justify-center items-center gap-12">
+        <section class="pb-12 w-full">
+            <div class="flex flex-col xl:flex-row 2xl:flex-row justify-center items-center gap-12 xl:gap-4">
                 <div class="w-full flex flex-col items-center gap-4">
-                    <img src="./images/pastries.png" alt="image-pastries">
+                    <img src="./images/pastries.png" alt="image-pastries" class="w-full">
                     <h3 class="font-secondary font-bold text-4xl text-black">PASTRIES</h3>
                 </div>
                 <div class="w-full flex flex-col items-center gap-4">
-                    <img src="./images/tea-selection.png" alt="image-tea">
+                    <img src="./images/tea-selection.png" alt="image-tea" class="w-full">
                     <h3 class="font-secondary font-bold text-4xl text-black">TEA SELECTION</h3>
                 </div>
                 <div class="w-full flex flex-col items-center gap-4">
-                    <img src="./images/coffee-selection.png" alt="image-coffee">
+                    <img src="./images/coffee-selection.png" alt="image-coffee" class="w-full">
                     <h3 class="font-secondary font-bold text-4xl text-black">COFFEE SELECTION</h3>
                 </div>
             </div>
         </section>
 
         <!-- OUR MENU -->
-        <section class="container pb-12 px-6">
-            <div class="flex flex-col justify-center items-center gap-8">
+        <section class="container pb-12 px-6 sm:px-10 xl:px-20">
+            <div class="flex flex-col justify-center items-start gap-8">
                 <div class="flex-col justify-start items-center gap-4">
                     <h1 class="font-secondary font-bold text-secondary text-6xl">OUR MENU</h1>
-                    <p class="font-primary text-black text-lg font-normal">Blandit enim pretium purus morbi non tincidunt auctor eu molestie. Vitae eu nullam tincidunt accumsan.</p>
+                    <p class="font-primary text-black text-lg font-normal xl:max-w-sm">Blandit enim pretium purus morbi non tincidunt auctor eu molestie. Vitae eu nullam tincidunt accumsan.</p>
                 </div>
-                <div class="flex flex-col 2xl:flex-row gap-8">
-                    <div class="flex flex-col justify-start items-center gap-8">
+                <div class="flex flex-col xl:flex-row items-start gap-8 xl:gap-12">
+                    <div class="flex flex-col justify-center items-start gap-8">
                         <div class="flex flex-col justify-center items-start gap-4">
                             <h3 class="font-secondary text-black font-black text-3xl">COFFEE SELECTION</h3>
 
-                            <div class="flex flex-row justify-between items-center gap-4">
-                                <div class="flex-col justify-start items-center gap-4">
+                            <div class="flex flex-row justify-between items-center gap-4 w-full">
+                                <div class="flex-col justify-start items-center gap-4 w-full">
                                     <div class="flex flex-row">
                                         <h4 class="font-primary text-xl font-bold text-black">Espresso</h4>
                                         <hr class="border-2 border-black w-full border-dotted ml-2 mt-[1rem]">
@@ -237,8 +184,8 @@
                                 <p class="self-start font-primary text-lg font-bold text-black">$2.99</p>
                             </div>
 
-                            <div class="flex flex-row justify-between items-center gap-4">
-                                <div class="flex-col justify-start items-center gap-4">
+                            <div class="flex flex-row justify-between items-center gap-4 w-full">
+                                <div class="flex-col justify-start items-center gap-4 w-full">
                                     <div class="flex flex-row">
                                         <h4 class="font-primary text-xl font-bold text-black">Americano</h4>
                                         <hr class="border-2 border-black w-full border-dotted ml-2 mt-[1rem]">
@@ -248,8 +195,8 @@
                                 <p class="self-start font-primary text-lg font-bold text-black">$3.49</p>
                             </div>
                             
-                            <div class="flex flex-row justify-between items-center gap-4">
-                                <div class="flex-col justify-start items-center gap-4">
+                            <div class="flex flex-row justify-between items-center gap-4 w-full">
+                                <div class="flex-col justify-start items-center gap-4 w-full">
                                     <div class="flex flex-row">
                                         <h4 class="font-primary text-xl font-bold text-black">Cappuccino</h4>
                                         <hr class="border-2 border-black w-full border-dotted ml-2 mt-[1rem]">
@@ -259,8 +206,8 @@
                                 <p class="self-start font-primary text-lg font-bold text-black">$3.99</p>
                             </div>
 
-                            <div class="flex flex-row justify-between items-center gap-4">
-                                <div class="flex-col justify-start items-center gap-4">
+                            <div class="flex flex-row justify-between items-center gap-4 w-full">
+                                <div class="flex-col justify-start items-center gap-4 w-full">
                                     <div class="flex flex-row">
                                         <h4 class="font-primary text-xl font-bold text-black">Latte</h4>
                                         <hr class="border-2 border-black w-full border-dotted ml-2 mt-[1rem]">
@@ -270,8 +217,8 @@
                                 <p class="self-start font-primary text-lg font-bold text-black">$4.49</p>
                             </div>
 
-                            <div class="flex flex-row justify-between items-center gap-4">
-                                <div class="flex-col justify-start items-center gap-4">
+                            <div class="flex flex-row justify-between items-center gap-4 w-full">
+                                <div class="flex-col justify-start items-center gap-4 w-full">
                                     <div class="flex flex-row">
                                         <h4 class="font-primary text-xl font-bold text-black">Mocha</h4>
                                         <hr class="border-2 border-black w-full border-dotted ml-2 mt-[1rem]">
@@ -281,8 +228,8 @@
                                 <p class="self-start font-primary text-lg font-bold text-black">$4.99</p>
                             </div>
 
-                            <div class="flex flex-row justify-between items-center gap-4">
-                                <div class="flex-col justify-start items-center gap-4">
+                            <div class="flex flex-row justify-between items-center gap-4 w-full">
+                                <div class="flex-col justify-start items-center gap-4 w-full">
                                     <div class="flex flex-row">
                                         <h4 class="font-primary text-xl font-bold text-black">Macadamia Nut Latte</h4>
                                         <hr class="border-2 border-black w-full border-dotted ml-2 mt-[1rem]">
@@ -296,8 +243,8 @@
                         <div class="flex flex-col justify-center items-start gap-4">
                             <h3 class="font-secondary text-black font-black text-3xl">SPECIALITY DRINKS</h3>
 
-                            <div class="flex flex-row justify-between items-center gap-4">
-                                <div class="flex-col justify-start items-center gap-4">
+                            <div class="flex flex-row justify-between items-center gap-4 w-full">
+                                <div class="flex-col justify-start items-center gap-4 w-full">
                                     <div class="flex flex-row">
                                         <h4 class="font-primary text-xl font-bold text-black">Vanilla Latte</h4>
                                         <hr class="border-2 border-black w-full border-dotted ml-2 mt-[1rem]">
@@ -307,8 +254,8 @@
                                 <p class="self-start font-primary text-lg font-bold text-black">$3.49</p>
                             </div>
 
-                            <div class="flex flex-row justify-between items-center gap-4">
-                                <div class="flex-col justify-start items-center gap-4">
+                            <div class="flex flex-row justify-between items-center gap-4 w-full">
+                                <div class="flex-col justify-start items-center gap-4 w-full">
                                     <div class="flex flex-row">
                                         <h4 class="font-primary text-xl font-bold text-black">Cold Brew</h4>
                                         <hr class="border-2 border-black w-full border-dotted ml-2 mt-[1rem]">
@@ -318,8 +265,8 @@
                                 <p class="self-start font-primary text-lg font-bold text-black">$3.49</p>
                             </div>
                             
-                            <div class="flex flex-row justify-between items-center gap-4">
-                                <div class="flex-col justify-start items-center gap-4">
+                            <div class="flex flex-row justify-between items-center gap-4 w-full">
+                                <div class="flex-col justify-start items-center gap-4 w-full">
                                     <div class="flex flex-row">
                                         <h4 class="font-primary text-xl font-bold text-black">Caramel Macchiato</h4>
                                         <hr class="border-2 border-black w-full border-dotted ml-2 mt-[1rem]">
@@ -329,8 +276,8 @@
                                 <p class="self-start font-primary text-lg font-bold text-black">$3.99</p>
                             </div>
 
-                            <div class="flex flex-row justify-between items-center gap-4">
-                                <div class="flex-col justify-start items-center gap-4">
+                            <div class="flex flex-row justify-between items-center gap-4 w-full">
+                                <div class="flex-col justify-start items-center gap-4 w-full">
                                     <div class="flex flex-row">
                                         <h4 class="font-primary text-xl font-bold text-black">Hazelnut Frappuccino</h4>
                                         <hr class="border-2 border-black w-full border-dotted ml-2 mt-[1rem]">
@@ -340,8 +287,8 @@
                                 <p class="self-start font-primary text-lg font-bold text-black">$5.99</p>
                             </div>
 
-                            <div class="flex flex-row justify-between items-center gap-4">
-                                <div class="flex-col justify-start items-center gap-4">
+                            <div class="flex flex-row justify-between items-center gap-4 w-full">
+                                <div class="flex-col justify-start items-center gap-4 w-full">
                                     <div class="flex flex-row">
                                         <h4 class="font-primary text-xl font-bold text-black">Matcha Green Tea Latte</h4>
                                         <hr class="border-2 border-black w-full border-dotted ml-2 mt-[1rem]">
@@ -353,12 +300,12 @@
                         </div>
                     </div>
 
-                    <div class="flex flex-col justify-start items-center gap-8">
+                    <div class="flex flex-col justify-center items-start gap-8">
                         <div class="flex flex-col justify-center items-start gap-4">
                             <h3 class="font-secondary text-black font-black text-3xl">PASTRIES</h3>
 
-                            <div class="flex flex-row justify-between items-center gap-4">
-                                <div class="flex-col justify-start items-center gap-4">
+                            <div class="flex flex-row justify-between items-center gap-4 w-full">
+                                <div class="flex-col justify-start items-center gap-4 w-full">
                                     <div class="flex flex-row">
                                         <h4 class="font-primary text-xl font-bold text-black">Muffin</h4>
                                         <hr class="border-2 border-black w-full border-dotted ml-2 mt-[1rem]">
@@ -368,8 +315,8 @@
                                 <p class="self-start font-primary text-lg font-bold text-black">$3.49</p>
                             </div>
 
-                            <div class="flex flex-row justify-between items-center gap-4">
-                                <div class="flex-col justify-start items-center gap-4">
+                            <div class="flex flex-row justify-between items-center gap-4 w-full">
+                                <div class="flex-col justify-start items-center gap-4 w-full">
                                     <div class="flex flex-row">
                                         <h4 class="font-primary text-xl font-bold text-black">Cinnamon Roll</h4>
                                         <hr class="border-2 border-black w-full border-dotted ml-2 mt-[1rem]">
@@ -379,8 +326,8 @@
                                 <p class="self-start font-primary text-lg font-bold text-black">$3.99</p>
                             </div>
                             
-                            <div class="flex flex-row justify-between items-center gap-4">
-                                <div class="flex-col justify-start items-center gap-4">
+                            <div class="flex flex-row justify-between items-center gap-4 w-full">
+                                <div class="flex-col justify-start items-center gap-4 w-full">
                                     <div class="flex flex-row">
                                         <h4 class="font-primary text-xl font-bold text-black">Danish Pastry</h4>
                                         <hr class="border-2 border-black w-full border-dotted ml-2 mt-[1rem]">
@@ -390,8 +337,8 @@
                                 <p class="self-start font-primary text-lg font-bold text-black">$4.49</p>
                             </div>
 
-                            <div class="flex flex-row justify-between items-center gap-4">
-                                <div class="flex-col justify-start items-center gap-4">
+                            <div class="flex flex-row justify-between items-center gap-4 w-full">
+                                <div class="flex-col justify-start items-center gap-4 w-full">
                                     <div class="flex flex-row">
                                         <h4 class="font-primary text-xl font-bold text-black">Scone</h4>
                                         <hr class="border-2 border-black w-full border-dotted ml-2 mt-[1rem]">
@@ -401,8 +348,8 @@
                                 <p class="self-start font-primary text-lg font-bold text-black">$4.49</p>
                             </div>
 
-                            <div class="flex flex-row justify-between items-center gap-4">
-                                <div class="flex-col justify-start items-center gap-4">
+                            <div class="flex flex-row justify-between items-center gap-4 w-full">
+                                <div class="flex-col justify-start items-center gap-4 w-full">
                                     <div class="flex flex-row">
                                         <h4 class="font-primary text-xl font-bold text-black">Mocha</h4>
                                         <hr class="border-2 border-black w-full border-dotted ml-2 mt-[1rem]">
@@ -413,11 +360,11 @@
                             </div>
                         </div>
                         
-                        <div class="flex flex-col justify-center items-start gap-4">
+                        <div class="flex flex-col justify-center items-start gap-4 w-full">
                             <h3 class="font-secondary text-black font-black text-3xl">SNACKS</h3>
 
-                            <div class="flex flex-row justify-between items-center gap-4">
-                                <div class="flex-col justify-start items-center gap-4">
+                            <div class="flex flex-row justify-between items-center gap-4 w-full">
+                                <div class="flex-col justify-start items-center gap-4 w-full">
                                     <div class="flex flex-row">
                                         <h4 class="font-primary text-xl font-bold text-black">Bagel with Cream Cheese</h4>
                                         <hr class="border-2 border-black w-full border-dotted ml-2 mt-[1rem]">
@@ -427,8 +374,8 @@
                                 <p class="self-start font-primary text-lg font-bold text-black">$4.49</p>
                             </div>
 
-                            <div class="flex flex-row justify-between items-center gap-4">
-                                <div class="flex-col justify-start items-center gap-4">
+                            <div class="flex flex-row justify-between items-center gap-4 w-full">
+                                <div class="flex-col justify-start items-center gap-4 w-full">
                                     <div class="flex flex-row">
                                         <h4 class="font-primary text-xl font-bold text-black">Granola Bar</h4>
                                         <hr class="border-2 border-black w-full border-dotted ml-2 mt-[1rem]">
@@ -438,8 +385,8 @@
                                 <p class="self-start font-primary text-lg font-bold text-black">$2.49</p>
                             </div>
                             
-                            <div class="flex flex-row justify-between items-center gap-4">
-                                <div class="flex-col justify-start items-center gap-4">
+                            <div class="flex flex-row justify-between items-center gap-4 w-full">
+                                <div class="flex-col justify-start items-center gap-4 w-full">
                                     <div class="flex flex-row">
                                         <h4 class="font-primary text-xl font-bold text-black">Fruit Cup</h4>
                                         <hr class="border-2 border-black w-full border-dotted ml-2 mt-[1rem]">
@@ -450,11 +397,11 @@
                             </div>
                         </div>
 
-                        <div class="flex flex-col justify-center items-start gap-4">
+                        <div class="flex flex-col justify-center items-start gap-4 w-full">
                             <h3 class="font-secondary text-black font-black text-3xl">EXTRAS</h3>
 
-                            <div class="flex flex-row justify-between items-center gap-4">
-                                <div class="flex-col justify-start items-center gap-4">
+                            <div class="flex flex-row justify-between items-center gap-4 w-full">
+                                <div class="flex-col justify-start items-center gap-4 w-full">
                                     <div class="flex flex-row">
                                         <h4 class="font-primary text-xl font-bold text-black">Extra Shot of Espresso</h4>
                                         <hr class="border-2 border-black w-full border-dotted ml-2 mt-[1rem]">
@@ -464,8 +411,8 @@
                                 <p class="self-start font-primary text-lg font-bold text-black">$0.49</p>
                             </div>
 
-                            <div class="flex flex-row justify-between items-center gap-4">
-                                <div class="flex-col justify-start items-center gap-4">
+                            <div class="flex flex-row justify-between items-center gap-4 w-full">
+                                <div class="flex-col justify-start items-center gap-4 w-full">
                                     <div class="flex flex-row">
                                         <h4 class="font-primary text-xl font-bold text-black">Flavored Syrup</h4>
                                         <hr class="border-2 border-black w-full border-dotted ml-2 mt-[1rem]">
@@ -475,8 +422,8 @@
                                 <p class="self-start font-primary text-lg font-bold text-black">$0.49</p>
                             </div>
                             
-                            <div class="flex flex-row justify-between items-center gap-4">
-                                <div class="flex-col justify-start items-center gap-4">
+                            <div class="flex flex-row justify-between items-center gap-4 w-full">
+                                <div class="flex-col justify-start items-center gap-4 w-full">
                                     <div class="flex flex-row">
                                         <h4 class="font-primary text-xl font-bold text-black">Non-Dairy Milk (Almond, Soy, Oat)</h4>
                                         <hr class="border-2 border-black w-full border-dotted ml-2 mt-[1rem]">
@@ -486,8 +433,8 @@
                                 <p class="self-start font-primary text-lg font-bold text-black">$0.49</p>
                             </div>
 
-                            <div class="flex flex-row justify-between items-center gap-4">
-                                <div class="flex-col justify-start items-center gap-4">
+                            <div class="flex flex-row justify-between items-center gap-4 w-full">
+                                <div class="flex-col justify-start items-center gap-4 w-full">
                                     <div class="flex flex-row">
                                         <h4 class="font-primary text-xl font-bold text-black">Chocolate Drizzle</h4>
                                         <hr class="border-2 border-black w-full border-dotted ml-2 mt-[1rem]">
@@ -503,14 +450,14 @@
         </section>
 
         <!-- TESTIMONIAL -->
-        <section class="relative pb-12 px-6 overflow-hidden">
+        <section class="relative pb-12 px-6 sm:px-10 xl:px-32 overflow-hidden">
             <div class="swiper-container">
                 <div class="swiper-wrapper gap-6">
                     <div class="swiper-slide">
-                        <div class="flex flex-row justify-start items-center gap-2">
+                        <div class="flex flex-row justify-start items-center gap-2 xl:gap-8 xl:px-32">
                             <p class="font-secondary font-bold text-9xl self-start -mt-4 text-secondary">"</p>
                             <div class="flex flex-col justify-center items-start gap-2">
-                                <p class="font-primary text-black font-normal text-xl">"I absolutely love the cozy ambiance of this cafe! The warm lighting, 
+                                <p class="font-primary text-black font-normal text-xl xl:text-4xl">"I absolutely love the cozy ambiance of this cafe! The warm lighting, 
                                     comfortable seating, and charming decor make it the perfect place to 
                                     unwind. And the coffee? Simply divine! Every sip of their artisanal 
                                     brews is a treat for the taste buds. Highly recommended!"</p>
@@ -519,10 +466,10 @@
                         </div>
                     </div>
                     <div class="swiper-slide">
-                        <div class="flex flex-row justify-start items-center gap-2">
+                        <div class="flex flex-row justify-start items-center gap-2 xl:gap-8 xl:px-32">
                             <p class="font-secondary font-bold text-9xl self-start -mt-4 text-secondary">"</p>
                             <div class="flex flex-col justify-center items-start gap-2">
-                                <p class="font-primary text-black font-normal text-xl">"The pastries here are to die for! Fresh, delicious, and beautifully presented. 
+                                <p class="font-primary text-black font-normal text-xl xl:text-4xl">"The pastries here are to die for! Fresh, delicious, and beautifully presented. 
                                     The staff is always friendly and attentive. This cafe has become my go-to spot 
                                     for a quick snack and a cup of coffee."</p>
                                 <h4 class="font-secondary font-normal text-black text-lg">John Doe</h4>
@@ -530,10 +477,10 @@
                         </div>
                     </div>
                     <div class="swiper-slide">
-                        <div class="flex flex-row justify-start items-center gap-2">
+                        <div class="flex flex-row justify-start items-center gap-2 xl:gap-8 xl:px-32">
                             <p class="font-secondary font-bold text-9xl self-start -mt-4 text-secondary">"</p>
                             <div class="flex flex-col justify-center items-start gap-2">
-                                <p class="font-primary text-black font-normal text-xl">"A hidden gem in the city! The tea selection is impressive, and the atmosphere 
+                                <p class="font-primary text-black font-normal text-xl xl:text-4xl">"A hidden gem in the city! The tea selection is impressive, and the atmosphere 
                                     is perfect for both working and relaxing. I can't get enough of their specialty 
                                     drinks. Highly recommend giving this place a visit!"</p>
                                 <h4 class="font-secondary font-normal text-black text-lg">Jane Smith</h4>
@@ -544,31 +491,31 @@
                 
                 <div class="">
                     <!-- Add Pagination -->
-                    <div class="swiper-pagination"></div>
+                    <div class="swiper-pagination xl:mt-20"></div>
                     <!-- Add Navigation -->
-                    <div class="hidden 2xl:flex">
-                        <div class="swiper-button-next"></div>
-                        <div class="swiper-button-prev"></div>
+                    <div class="hidden xl:flex mx-12">
+                        <div class="swiper-button-next mr-30"></div>
+                        <div class="swiper-button-prev ml-30"></div>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- NEWS -->
-        <section class="pb-12 px-6 2xl:px-0 mt-8 2xl:mt-0">
-            <div class="relative hidden 2xl:flex">
+        <section class="pb-12 px-6 sm:px-10 2xl:px-0 mt-8 sm:mt-10 2xl:mt-0">
+            <!-- <div class="relative hidden 2xl:flex">
                 <div class="absolute flex flex-row justify-between">
                     <img src="./images/imagebeans-left.png" alt="imagebean-left">
                     <img src="./images/imagebeans-right.png" alt="imaggebean-right">
                 </div>
-            </div>
+            </div> -->
             <div class="relative flex flex-col justify-center items-center gap-8">
                 <div class="flex-col justify-start items-center gap-4">               
                     <h1 class="font-secondary font-bold text-secondary text-6xl">NEWS ARTICLE</h1>
-                    <p class="font-primary text-black text-lg font-normal">Blandit enim pretium purus morbi non tincidunt auctor eu molestie. 
+                    <p class="font-primary text-black text-lg font-normal xl:max-w-lg">Blandit enim pretium purus morbi non tincidunt auctor eu molestie. 
                         Vitae eu nullam tincidunt accumsan.
                     </p>
-                <div class="flex flex-col justify-center items-center mt-10">
+                <div class="flex flex-col justify-center items-start mt-10">
                     <div class="flex flex-row gap-4 border-t py-4">
                         <img src="./images/news1.png" alt="image-news1" class="w-40">
                         <div class="flex flex-col justify-center items-start gap-2">
@@ -592,39 +539,38 @@
                     </div>
                 </div>  
             </div>
-            <button class="bg-secondary hover:bg-white text-white hover:text-secondary font-primary font-bold py-4 px-8 rounded-full items-start">
+            <button class="bg-secondary hover:bg-yellow-500 text-white hover:text-slate-900 font-primary font-bold py-4 px-8 rounded-full items-start">
                 NEWS ARTICLE
             </button>
         </section>
 
-        <section class="pb-12 2xl:px-0">
-            <div class="flex flex-col gap-4">
-                <div class="flex flex-col 2xl:flex-row gap-4">
-                    <img src="./images/gallery1.png" alt="image-gallery1">
-                    <img src="./images/gallery2.png" alt="image-gallery2">
-                    <img src="./images/gallery3.png" alt="image-gallery3">
-                    <img src="./images/gallery4.png" alt="image-gallery4">
-                    <img src="./images/gallery5.png" alt="image-gallery5">
-                    <img src="./images/gallery6.png" alt="image-gallery6">
+        <section class="pb-12 xl:px-0 xl:w-screen">
+            <div class="flex flex-col gap-4 xl:w-full">
+                <div class="flex flex-col xl:flex-row xl:justify-center xl:items-center gap-4 xl:w-full xl:overflow-hidden">
+                    <img src="./images/gallery1.png" alt="image-gallery1" class="object-cover w-full h-full">
+                    <img src="./images/gallery2.png" alt="image-gallery2" class="object-cover w-full h-full">
+                    <img src="./images/gallery3.png" alt="image-gallery3" class="object-cover w-full h-full">
+                    <img src="./images/gallery4.png" alt="image-gallery4" class="object-cover w-full h-full">
+                    <img src="./images/gallery5.png" alt="image-gallery5" class="object-cover w-full h-full">
                 </div>
-                <div class="hidden 2xl:flex flex-row gap-4">
-                    <img src="./images/gallery7.png" alt="image-gallery7">
-                    <img src="./images/gallery8.png" alt="image-gallery8">
-                    <img src="./images/gallery9.png" alt="image-gallery9">
-                    <img src="./images/gallery1.png" alt="image-gallery1">
-                    <img src="./images/gallery2.png" alt="image-gallery2">
-                    <img src="./images/gallery3.png" alt="image-gallery3">
+                <div class="hidden xl:flex flex-row gap-4 justify-center items-center overflow-hidden">
+                    <img src="./images/gallery7.png" alt="image-gallery7" class="object-cover w-full h-full">
+                    <img src="./images/gallery8.png" alt="image-gallery8" class="object-cover w-full h-full">
+                    <img src="./images/gallery9.png" alt="image-gallery9" class="object-cover w-full h-full">
+                    <img src="./images/gallery1.png" alt="image-gallery1" class="object-cover w-full h-full">
+                    <img src="./images/gallery2.png" alt="image-gallery2" class="object-cover w-full h-full">
+                    <img src="./images/gallery3.png" alt="image-gallery3" class="object-cover w-full h-full">
                 </div>
             </div>
         </section>
 
-        <section class="pb-12 px-6">
-            <div class="flex flex-col gap-8">
+        <section class="pb-12 px-6 sm:px-10">
+            <div class="flex flex-col xl:justify-center xl:items-center gap-8">
                 <div class="flex-col justify-start items-center gap-4">
                     <h3 class="font-secondary font-bold text-secondary text-6xl">PARTNERSHIP</h3>
                     <p class="font-primary text-black text-lg font-normal">A Journey Through Different Brewing Methods</p>
                 </div>
-                <div class="flex flex-col 2xl:flex-row justify-center items-start gap-12">
+                <div class="flex flex-col xl:flex-row justify-center items-start gap-12">
                     <img src="./images/partner1.png" alt="logo-partner1">
                     <img src="./images/partner2.png" alt="logo-partner2">
                     <img src="./images/partner3.png" alt="logo-partner3">
@@ -636,10 +582,10 @@
     </main>
 
     <footer class="py-12">
-        <div class="px-6 flex flex-col gap-4">
-            <div class="flex flex-col justify-center items-start gap-4">
-                <img src="./images/logo.png" alt="logo-kofee" class="w-52">
-                <p class="font-primary text-black text-lg font-normal">Blandit enim pretium purus morbi non tincidunt auctor eu molestie.</p>
+        <div class="px-6 sm:px-10 xl:px-20 flex flex-col xl:flex-row xl:justify-between xl:items-start gap-4">
+            <div class="flex flex-col justify-center items-start gap-4 xl:gap-2">
+                <img src="./images/logo.png" alt="logo-kofee" class="w-52 xl:w-32">
+                <p class="font-primary text-black text-lg font-normal xl:max-w-md">Blandit enim pretium purus morbi non tincidunt auctor eu molestie.</p>
                 <div class="flex flex-row justify-center items-center gap-8">
                     <img src="./images/FB.svg" alt="icon-facebook" class="w-4">
                     <img src="./images/IG.svg" alt="icon-instagram" class="w-6">
@@ -649,15 +595,18 @@
                 </div>
             </div>
             <div>
-                <ul class="flex flex-row font-bold text-black gap-8 text-xl font-primary mt-6">
+                <ul class="flex flex-col font-bold text-black gap-4 text-xl font-primary mt-6 xl:mt-0">
                     <li>Home</li>
                     <li>About Us</li>
                     <li>Reservation</li>
                 </ul>
             </div>
+            <div class="flex flex-col justify-center items-start gap-4">
+                <p class="font-primary font-normal text-secondary text-xl">kofee.contact@gmail.com</p>
+                <p class="font-primary font-normal text-secondary text-xl">+62 812 1234 5678</p>
+            </div>
         </div>
     </footer>
-
     
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="./dev.js"></script>
